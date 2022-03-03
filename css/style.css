@@ -1,6 +1,7 @@
 body {
   background-color: #f0f2f5;
 }
+
 .container {
   width: 400px;
   height: 500px;
@@ -10,11 +11,13 @@ body {
   transform: translate(-50%, -30%);
   text-align: center;
 }
+
 @media (max-width: 767px) {
   .container {
     width: 300px;
   }
 }
+
 .container span {
   color: #1877f2;
   font-size: 55px;
@@ -28,6 +31,12 @@ body {
 @media (max-width: 769px) {
   .container span {
     left: 5px;
+  }
+}
+
+@media (max-width: 426px) {
+  .container span {
+    font-size: 40px;
   }
 }
 
@@ -88,9 +97,11 @@ button {
   border-color: #1877f2;
   transition: 0.2s;
 }
+
 .log:hover {
   background-color: #136ddb;
 }
+
 a {
   text-decoration: none;
   color: #1877f2;
@@ -101,10 +112,12 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 .tt {
   font-size: 13px;
   color: #777;
 }
+
 .tt::before {
   content: "";
   position: absolute;
@@ -114,12 +127,7 @@ a:hover {
   top: 403px;
   left: 10px;
 }
-@media (max-width: 767px) {
-  .tt::before,
-  .tt::after {
-    display: none;
-  }
-}
+
 .tt::after {
   content: "";
   position: absolute;
@@ -128,6 +136,13 @@ a:hover {
   width: 45%;
   top: 403px;
   left: 210px;
+}
+
+@media (max-width: 767px) {
+  .tt::before,
+  .tt::after {
+    display: none;
+  }
 }
 
 .two {
@@ -144,6 +159,7 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
+
 .two:hover {
   background-color: #3da328;
 }
